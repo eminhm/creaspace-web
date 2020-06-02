@@ -2,4 +2,44 @@
   color: white !important;
 }
 
+.c-gray {
+  color: #c7c6c8 !important;
+}
+
+.c-black {
+  color: black !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
 /*# sourceMappingURL=text.css.map */
