@@ -24,6 +24,8 @@
     <!--=============================================
     CSS
     =============================================!-->
+    <link rel='stylesheet' href='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css'>
+
     <link href="./css/animation.css" type="text/css" rel="stylesheet">
     <link href="./css/text.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet">
