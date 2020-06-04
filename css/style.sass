@@ -232,12 +232,13 @@ nav
 
 .navbar-brand
   font-family: "Merriweather", serif
+  padding-top: 0.1rem
 
 .nav-item, .navbar-text
   text-transform: uppercase
 
 .nav-link
-  padding: .7rem 1rem .3rem 0
+  padding: .2rem 1rem .3rem 0
   color: rgba(255,255,255,.5)
 
   &:hover
@@ -245,12 +246,22 @@ nav
 
 .dropdown-menu
   left: -10px
-  top: 130%
+  top: 150%
   min-width: max-content
+  background-color: #f1f1f1
+  border-color: #e3e3e3
 
 .dropdown-item
   text-align: center
-  padding: .25rem 1.8rem
+  padding: .25rem .9rem
+  font-size: 90%
+  letter-spacing: 1px
+
+  &:hover
+    background-color: unset
+
+.dropdown-toggle::after
+  display: none
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Dropdown (Language)
@@ -296,6 +307,10 @@ nav
 .lang-arrow
   width: 14px
   margin-top: -2px
+  margin-left: 4px
+
+.lang-img
+  width: 15px
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Buttons
@@ -309,7 +324,10 @@ button
   border-radius: 250px
   background-color: black
   color: white
-  padding: 5px
+
+.btn-main
+  padding: 5px 15px
+  width: 100%
 
   .navbar-toggler
     width: auto !important
@@ -394,11 +412,34 @@ button
   -moz-column-count: 3
   column-count: 3
 
-@media (max-width: 500px)
-  .image-gallery
-    -webkit-column-count: 2
-    -moz-column-count: 2
-    column-count: 2
+//@media (max-width: 500px)
+//  .image-gallery
+//    -webkit-column-count: 2
+//    -moz-column-count: 2
+//    column-count: 2
+
+
+
+
+
+
+
+#team
+  margin-top: 100px
+  margin-bottom: 100px
+
+  div div img
+    width: 80%
+    margin-left: auto
+    margin-right: auto
+    display: block
+    border-radius: 50%
+    -webkit-box-shadow: -12px 13px 0px 0px rgba(0,0,0,0.3)
+    -moz-box-shadow: -12px 13px 0px 0px rgba(0,0,0,0.3)
+    box-shadow: -12px 13px 0px 0px rgba(0,0,0,0.3)
+
+
+
 
 
 
@@ -422,12 +463,13 @@ video
   position: relative
 
   h1
-    top: 40vh
+    top: 50vh
     left: 0
     position: absolute
     text-align: center
     width: 100%
     text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px
+    color: white
 
 .welcome
   height: 100vh
@@ -436,10 +478,20 @@ video
 
 
 
-
-
 .cloud-container
+  height: 70vh
+  padding-top: 100px
+
+@media (max-width: 991px)
+  .cloud-container
+    height: 100vh
+
+  .cloud-container .col-lg-4 h3
+    margin-top: 0 !important
+
+.cloud-row
   position: relative
+  height: 75vh
 
 .cloud
   position: absolute
@@ -459,7 +511,7 @@ video
 
 .cloud-C
   top: 150px
-  left: 270px
+  right: 0
 
 
 
@@ -467,34 +519,36 @@ video
 
 
 #audioplayer
-  width: 80%
+  width: 100%
   height: 60px
   float: right
 
-
 #pButton
-  height: 100px
-  width: 100px
-  border: none
+  height: 70%
+  width: 15%
   background-size: 50% 50%
   background-repeat: no-repeat
   background-position: center
   float: left
   outline: none
   position: absolute
-  left: 7%
-  top: 25%
+  left: 4%
+  top: 15%
+
+@media (max-width: 767px)
+  #pButton
+    left: 5%
 
 .play
-  background: url('http://www.alexkatz.me/codepen/img/play.png')
+  background: url('../img/icons/play-solid.svg')
 
 .pause
-  background: url('http://www.alexkatz.me/codepen/img/pause.png')
+  background: url('../img/icons/pause-solid.svg')
 
 #timeline
-  width: 400px
+  width: 100%
   height: 5px
-  margin-top: 20px
+  margin-top: 10px
   float: left
   border-radius: 15px
   background: rgba(0, 0, 0, 0.3)
@@ -505,24 +559,39 @@ video
   border-radius: 50%
   margin-top: -5px
   background: #624695
+  cursor: pointer
+
+  &:active
+    background-color: #503979
 
 .podcast-container
   background-color: white
   border-radius: 20px
   padding: 50px
-  -webkit-box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75)
-  -moz-box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75)
-  box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75)
+  -webkit-box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.2)
+  -moz-box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.2)
+  box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.2)
 
   div .podcast-portrait
     border-radius: 100%
     width: 20%
     opacity: 0.5
+    animation: 60s play-rotation infinite linear
 
   div #audioplayer
     width: 75%
     margin-left: 5%
 
+@keyframes play-rotation
+  to
+    transform: rotate(360deg)
+
+.podcast-row
+  margin-bottom: 50px
+
+@media (max-width: 767px)
+  .podcast-row
+    margin-bottom: 100px
 
 .podcast-bg
   background-color: #e5d778
@@ -553,11 +622,17 @@ video
 .element-box
   background-color: white
   border-radius: 10px
-  padding: 10px
+  padding: 60px 10px
   -webkit-box-shadow: 0 2px 10px -3px rgba(0,0,0,0.5)
   -moz-box-shadow: 0 2px 10px -3px rgba(0,0,0,0.5)
   box-shadow: 0 2px 10px -3px rgba(0,0,0,0.5)
+  text-align: center
 
+  img
+    height: 80px
+    margin-left: auto
+    margin-right: auto
+    display: block
 
 .list-horz li
   float: left
@@ -571,7 +646,6 @@ video
   height: 100vh
   width: 100%
   overflow: hidden
-  background-color: black
 
 #videobcg
   position: absolute
@@ -584,3 +658,12 @@ video
   z-index: -100
 
 
+
+#mute-video
+  position: absolute
+  bottom: 10px
+  right: 10px
+  background-color: transparent
+
+  img
+    height: 20px
