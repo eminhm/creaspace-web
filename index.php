@@ -6,19 +6,6 @@
     <!--=============================================
     Header
     =============================================!-->
-    <!--<div class="hero-wrapper">
-        <figure>
-            <video loop="loop" muted="muted" autoplay="autoplay">
-                <source src="https://assets.yesstud.io/studioblvd/video/studioblvd_420.mp4"/>
-            </video>
-        </figure>
-    </div>
-
-    <div class="supermodule">
-        <h1 class="c-white">Pudis ea pro delestion nem illatio rescit ipicten damendantur?</h1>
-    </div>
-    -->
-
     <section id="banner">
 
         <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
@@ -28,7 +15,7 @@
 
         <div class="supermodule">
             <h1 data-animation="zoomIn" data-animation-delay="300ms">
-                “Wir bieten dir die Möglichkeit an dich zu verwirklichen!”
+                <?php echo $lang['dl-title'] ?>
             </h1>
         </div>
 
@@ -90,21 +77,25 @@
             </div>
             <div class="col-lg-7" data-animation="slideInLeft" data-animation-delay="400ms">
                 <h3>
-                    Creaspace bietet in der ganzen Schweiz Kreativplätze für Jugendliche an.
+                    <?php echo $lang['dl-desc-1'] ?>
                 </h3>
                 <h5 class="c-gray m-t-1">
-                    Das Netzwerk sollte jungen, kreativen Künstlern eine Plattform bieten um ihre Projekte umzusetzen und gleichzeitig Leute mit selben Interessen kennenzulernen.
+                    <?php echo $lang['dl-desc-2'] ?>
                 </h5>
 
                 <div class="row m-t-4">
                     <div class="col-lg-4 col-4">
-                        <a href="./dienstleistungen.php">
-                            <button class="btn-main m-b-5">Dienstleistungen</button>
+                        <a href="service.php">
+                            <button class="btn-main m-b-5">
+                                <?php echo $lang['services'] ?>
+                            </button>
                         </a>
                     </div>
                     <div class="col-lg-4 col-4">
-                        <a href="./dienstleistungen.php">
-                            <button class="btn-main">Kontakt</button>
+                        <a href="service.php">
+                            <button class="btn-main">
+                                <?php echo $lang['contact'] ?>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -126,14 +117,15 @@
                     <img class="img-fluid podcast-portrait" src="img/podcast/gallery/HER_01_Q.JPG">
 
                     <audio id="music" preload="true">
-                        <source src="audio/yukis.mp3">
+                        <source src="audio/podcast.ogg" type="audio/ogg">
+                        <source src="audio/podcast.mp3" type="audio/mpeg">
                     </audio>
 
                     <div id="audioplayer">
                         <button id="pButton" class="play"></button>
 
-                        <h3>Podcast</h3>
-                        <h5 class="c-gray m-b-2">Am qui con et et arum latas nos aut officto rporehenim rest.</h5>
+                        <h3>VENUSCYBORG IM CREASPACE TALK</h3>
+                        <h5 class="c-gray m-b-2">PODCAST (29:22 Min)</h5>
 
                         <div id="timeline">
                             <div id="playhead"></div>
@@ -191,26 +183,35 @@
         </div>
     </div>
 
-
     <div class="container" id="team">
         <div class="row">
             <div class="col-lg-12 m-b-4">
-                <h3 class="text-center">Unser Team</h3>
+                <h3 class="text-center">
+                    <?php echo $lang['team-title'] ?>
+                </h3>
                 <h5 class="c-gray text-center">
-                    Wir arbeiten daran, euch bestmögliche Diensleitung anzubieten.
+                    <?php echo $lang['team-desc'] ?>
                 </h5>
             </div>
-            <div class="col-lg-3">
-                <img class="img-fluid" src="http://localhost/img/podcast/gallery/WORK_1.1_Q.JPG">
+            <div class="col-lg-3 team" data-animation="slideInUp">
+                <img class="img-fluid" src="./img/team/cristina.png">
+                <h5 class="m-t-2 text-center">CRISTINA GARCIA BADENES</h5>
+                <h6 class="text-center"><?php echo $lang['cristina'] ?></h6>
             </div>
-            <div class="col-lg-3">
-                <img class="img-fluid" src="http://localhost/img/podcast/gallery/WORK_1.1_Q.JPG">
+            <div class="col-lg-3 team" data-animation="slideInUp" data-animation-delay="100ms">
+                <img class="img-fluid" src="./img/team/emin.png">
+                <h5 class="m-t-2 text-center">EMIN CAN HOMALIOGLU</h5>
+                <h6 class="text-center"><?php echo $lang['emin'] ?></h6>
             </div>
-            <div class="col-lg-3">
-                <img class="img-fluid" src="http://localhost/img/podcast/gallery/WORK_1.1_Q.JPG">
+            <div class="col-lg-3 team" data-animation="slideInUp" data-animation-delay="200ms">
+                <img class="img-fluid" src="./img/team/livia.png">
+                <h5 class="m-t-2 text-center">LIVIA JASMIN MOOR</h5>
+                <h6 class="text-center"><?php echo $lang['livia'] ?></h6>
             </div>
-            <div class="col-lg-3">
-                <img class="img-fluid" src="http://localhost/img/podcast/gallery/WORK_1.1_Q.JPG">
+            <div class="col-lg-3 team" data-animation="slideInUp" data-animation-delay="300ms">
+                <img class="img-fluid" src="./img/team/samuel.png">
+                <h5 class="m-t-2 text-center">SASCHA SAMUEL MAYER</h5>
+                <h6 class="text-center"><?php echo $lang['samuel'] ?></h6>
             </div>
         </div>
     </div>

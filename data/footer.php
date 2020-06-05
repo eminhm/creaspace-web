@@ -6,9 +6,16 @@
                     <h3 class="brand c-black">creaspace</h3>
 
                     <ul class="list-unstyled list-horz footer-list">
-                        <li>KONTAKT</li>
-                        <li>IMPRESSUM</li>
-                        <li>PRIVACY</li>
+                        <li>
+                            <a href="./contact.php">
+                                <?php echo $lang['contact'] ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy.php">
+                                <?php echo $lang['privacy'] ?>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-6">

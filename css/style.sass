@@ -48,9 +48,15 @@ footer
   font-size: 2.2rem
   padding: 0 10px
 
-.social, .footer-list
+.social, .footer-list a
   width: max-content
   padding: 10px 0
+  text-transform: uppercase
+  letter-spacing: 1px
+  color: black
+
+  &:hover
+    text-decoration: none
 
   a img
     height: 1.2rem
@@ -240,6 +246,8 @@ nav
 .nav-link
   padding: .2rem 1rem .3rem 0
   color: rgba(255,255,255,.5)
+  letter-spacing: 1px
+  margin: 0 0.5rem
 
   &:hover
     color: rgba(255,255,255,.8)
@@ -331,6 +339,9 @@ button
 
   .navbar-toggler
     width: auto !important
+
+.navbar-dark .navbar-toggler
+  border: none !important
 
 .info-button
   background: none
@@ -426,7 +437,7 @@ button
 
 #team
   margin-top: 100px
-  margin-bottom: 100px
+  margin-bottom: 40px
 
   div div img
     width: 80%
@@ -438,26 +449,35 @@ button
     -moz-box-shadow: -12px 13px 0px 0px rgba(0,0,0,0.3)
     box-shadow: -12px 13px 0px 0px rgba(0,0,0,0.3)
 
+.team
+
+  h5
+    font-size: 0.9rem
+    font-weight: 700
+    margin: 40px 0 0
+
+  h6
+    font-weight: 400
+    color: #a2a1a3
+    margin-bottom: 70px
 
 
+//video
+//  height: 100vh
+//  position: fixed
+//  bottom: 0
+//  right: 0
+//  width: auto
+//  min-height: 100vh
+//  min-width: 100%
+//  z-index: -900
+//  top: 63px
+//
+//  h1
+//    padding: 20px
 
-
-
-
-video
-  height: 100vh
-  position: fixed
-  bottom: 0
-  right: 0
-  width: auto
-  min-height: 100vh
-  min-width: 100%
-  z-index: -900
-  top: 63px
-
-  h1
-    padding: 20px
-
+#video-bg
+  background-color: #e5d778
 
 .supermodule
   position: relative
@@ -640,7 +660,6 @@ video
 
 
 
-
 #banner
   position: relative
   height: 100vh
@@ -667,3 +686,24 @@ video
 
   img
     height: 20px
+
+
+
+form
+  background-color: #eeedef
+  border: solid 1px #d0d0d0
+  padding: 20px
+
+  button
+    width: 100%
+    padding: 5px 0
+
+  div input
+    border-radius: 0
+    outline: black
+
+  div textarea
+    width: 100%
+    padding: .375rem .75rem
+    border: 1px solid #ced4da
+    border-radius: .25rem
