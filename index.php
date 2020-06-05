@@ -49,22 +49,22 @@
             <div class="col-lg-4 m-b-2">
                 <div class="element-box" data-animation="zoomIn">
                     <img class="img-fluid" src="./img/icons/pencil-ruler-solid.svg">
-                    <h3 class="m-t-5">Pudis ea pro delestion nem</h3>
-                    <h5 class="m-b-2">Pudis ea pro delestion nem</h5>
+                    <h3 class="m-t-5">Dein Hobby</h3>
+                    <h5 class="m-b-2">Creaspace bietet eine Vielfalt an Möglichkeiten für viele Hobbys an.</h5>
                 </div>
             </div>
             <div class="col-lg-4 m-b-2">
                 <div class="element-box" data-animation="zoomIn" data-animation-delay="300ms">
                     <img class="img-fluid" src="./img/icons/person-booth-solid.svg">
-                    <h3 class="m-t-5">Pudis ea pro delestion nem</h3>
-                    <h5 class="m-b-2">Pudis ea pro delestion nem</h5>
+                    <h3 class="m-t-5">In der Nähe</h3>
+                    <h5 class="m-b-2">Unsere Plätze sind überall in der Schweiz verteilt und womöglich in Deiner Nähe.</h5>
                 </div>
             </div>
             <div class="col-lg-4 m-b-2">
                 <div class="element-box" data-animation="zoomIn" data-animation-delay="600ms">
                     <img class="img-fluid" src="./img/icons/child-solid.svg">
-                    <h3 class="m-t-5">Pudis ea pro delestion nem</h3>
-                    <h5 class="m-b-2">Pudis ea pro delestion nem</h5>
+                    <h3 class="m-t-5">Für Alle</h3>
+                    <h5 class="m-b-2">Egal wie alt du bist oder woher du kommst. Bei Creaspace, gibt es Platz für dich.</h5>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
     <div class="container">
         <div class="row m-b-30">
             <div class="col-lg-3 offset-lg-1" data-animation="slideInRight" data-animation-delay="400ms">
-                <img src="img/podcast/portrait.jpg" class="img-fluid m-b-3">
+                <img src="img/logo.png" class="img-fluid m-b-3">
             </div>
             <div class="col-lg-7" data-animation="slideInLeft" data-animation-delay="400ms">
                 <h3>

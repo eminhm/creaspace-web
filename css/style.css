@@ -272,9 +272,10 @@ nav {
   z-index: 999;
 }
 
-.navbar-brand {
+.navbar-brand, .brand {
   font-family: "Merriweather", serif;
   padding-top: 0.1rem;
+  font-weight: 700;
 }
 
 .nav-item, .navbar-text {
