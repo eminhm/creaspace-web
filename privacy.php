@@ -1,10 +1,14 @@
 <?php include ("data/head.php"); ?>
 
 <div id="wrap">
+
+    <!--=============================================
+    Navigation
+    =============================================!-->
     <?php include ("data/navbar.php"); ?>
 
     <!--=============================================
-    Header
+    Cookie Privacy Content
     =============================================!-->
     <div class="container m-t-10 m-b-5">
         <div class="row">
@@ -43,11 +47,9 @@
     </div>
 
     <!--=============================================
-    FOOTER
+    Footer
     =============================================!-->
     <?php include ("data/footer.php"); ?>
 </div>
 
 <?php include ("data/head_scripts.php"); ?>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js'></script>

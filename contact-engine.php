@@ -1,8 +1,12 @@
 <?php
 
+/* Contact Form Engine
+ * Code for the contact form function.
+ */
+
 $recipient = 'emin.h@hotmail.com';
-$subject = 'Mindfate Support';
-$sender = 'noreply@mindfate.cc';
+$subject = 'Creaspace Support';
+$sender = 'noreply@creaspace.cc';
 
 $name = Trim(stripslashes($_POST['Name']));
 $email = Trim(stripslashes($_POST['Email']));

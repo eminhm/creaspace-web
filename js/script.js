@@ -1,4 +1,6 @@
-// Mouse Parallax
+/* Mouse Parallax Element
+ * =====================
+ * */
 $.fn.parallax = function(resistance, mouse) {
     $el = $(this);
     TweenLite.to($el, 0.2, {
@@ -14,37 +16,31 @@ $(document).mousemove(function(e) {
 });
 
 
-// Horizontal Scroll - Allow Mouse Wheel
-$(function() {
-    $(".horizontal-scroll").mousewheel(function(event, delta) {
-        this.scrollLeft -= (delta * 3);
-        event.preventDefault();
-    });
-});
 
-
-// Animation Pure JS
+/* Full Web Animations
+ * =====================
+ * */
 var Animation = function ({ offset } = { offset: 10 }) {
     var _elements;
 
-    // Define a dobra superior, inferior e laterais da tela
+    // Defines the top, bottom and side folds of the screen
     var windowTop = offset * window.innerHeight / 100;
     var windowBottom = window.innerHeight - windowTop;
     var windowLeft = 0;
     var windowRight = window.innerWidth;
 
     function start(element) {
-        // Seta os atributos customizados
+        // Custom attributes arrow
         element.style.animationDelay = element.dataset.animationDelay;
         element.style.animationDuration = element.dataset.animationDuration;
-        // Inicia a animacao setando a classe da animacao
+        // Start the animation by setting the animation class
         element.classList.add(element.dataset.animation);
-        // Seta o elemento como animado
+        // Arrow the element as animated
         element.dataset.animated = "true";
     }
 
     function isElementOnScreen(element) {
-        // Obtem o boundingbox do elemento
+        // Get the bounding box of the element
         var elementRect = element.getBoundingClientRect();
         var elementTop =
             elementRect.top + parseInt(element.dataset.animationOffset) ||
@@ -55,7 +51,7 @@ var Animation = function ({ offset } = { offset: 10 }) {
         var elementLeft = elementRect.left;
         var elementRight = elementRect.right;
 
-        // Verifica se o elemento esta na tela
+        // Check if the element is on the screen
         return (
             elementTop <= windowBottom &&
             elementBottom >= windowTop &&
@@ -64,17 +60,17 @@ var Animation = function ({ offset } = { offset: 10 }) {
 
     }
 
-    // Percorre o array de elementos, verifica se o elemento está na tela e inicia animação
+    // Scrolls through the array of elements, checks if the element is on the screen and starts animation
     function checkElementsOnScreen(els = _elements) {
         for (var i = 0, len = els.length; i < len; i++) {
-            // Passa para o proximo laço se o elemento ja estiver animado
+            // Move to the next loop if the element is already animated
             if (els[i].dataset.animated) continue;
 
             isElementOnScreen(els[i]) && start(els[i]);
         }
     }
 
-    // Atualiza a lista de elementos a serem animados
+    // Updates the list of elements to be animated
     function update() {
         _elements = document.querySelectorAll(
             "[data-animation]:not([data-animated])");
@@ -82,12 +78,12 @@ var Animation = function ({ offset } = { offset: 10 }) {
         checkElementsOnScreen(_elements);
     }
 
-    // Inicia os eventos
+    // Starts the events
     window.addEventListener("load", update, false);
     window.addEventListener("scroll", () => checkElementsOnScreen(_elements), { passive: true });
     window.addEventListener("resize", () => checkElementsOnScreen(_elements), false);
 
-    // Retorna funcoes publicas
+    // Return public functions
     return {
         start,
         isElementOnScreen,
@@ -103,12 +99,9 @@ var animation = new Animation(options);
 
 
 
-
-
-
-
-
-// Audio
+/* Podcast Audio Element
+ * =====================
+ * */
 var music = document.getElementById('music'); // id for audio element
 var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
 var pButton = document.getElementById('pButton'); // play button
@@ -216,7 +209,10 @@ function getPosition(el) {
 }
 
 
-// Mute/Ummute Toggle
+
+/* Mute & Unmute Video
+ * =====================
+ * */
 $(".audio-off").hide();
 $("video").prop('muted', true);
 $("#mute-video").click( function (){
@@ -231,5 +227,10 @@ $("#mute-video").click( function (){
     }
 });
 
+
+
+/* LightGallery Call
+ * =====================
+ * */
 lightGallery(document.getElementById('lightgallery'));
 lightGallery(document.getElementById('lightgallery-1'));

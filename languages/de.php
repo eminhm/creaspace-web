@@ -8,6 +8,10 @@
         // Contact
         "contact" => "Kontakt",
         "contactText" => "Haben Sie noch Fragen? Gibt es etwas, das Sie uns mitteilen möchten? Fühlen Sie sich frei, das Kontaktformular unten zu benutzen.",
+        "confirmed" => "Bestätigt",
+        "mailingConfirmedText" => "Wir haben die Nachricht erhalten.",
+        "redirectIn" => "Weiterleitung in",
+        "redirectSeconds" => "Sekunden",
 
         "email" => "E-Mail",
         "message" => "Nachricht",
@@ -30,5 +34,13 @@
         // Nav & Footer
         "home" => "Startseite",
         "privacy" => "Datenschutz",
+
+        // Elements
+        "hobby" => "Dein Hobby",
+        "hobby-text" => "Creaspace bietet eine Vielfalt an Möglichkeiten für viele Hobbys an.",
+        "near" => "In der Nähe",
+        "near-text" => "Unsere Plätze sind überall in der Schweiz verteilt und womöglich in Deiner Nähe.",
+        "all" => "Für Alle",
+        "all-text" => "Egal wie alt du bist oder woher du kommst. Bei Creaspace, gibt es Platz für dich.",
 
     );

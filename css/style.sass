@@ -1,14 +1,17 @@
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Font Imports
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap')
-
-::selection
-  background-color: lightgray
-  color: black
 
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     General Selectors
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::selection
+  background-color: lightgray
+  color: black
 
 html
   scroll-behavior: smooth
@@ -33,7 +36,6 @@ footer
   bottom: 0
   width: 100%
   height: 0
-  //border-top: solid 1px #0f0f0f
 
 .footer-box
   background-color: #c7c6c8
@@ -80,9 +82,6 @@ footer
   li
     font-size: 0.9rem
 
-
-
-
 .footer-social
   margin: 0 auto 10px
 
@@ -100,6 +99,7 @@ footer
 .no-style
   text-transform: none
   letter-spacing: 0
+
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Structuring
@@ -224,6 +224,15 @@ hr
 
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    List
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.list-horz li
+  float: left
+  padding-right: 20px
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Navbar Correction
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -243,6 +252,7 @@ nav
 
 .nav-item, .navbar-text
   text-transform: uppercase
+  padding-top: 6px
 
 .nav-link
   padding: .2rem 1rem .3rem 0
@@ -253,24 +263,6 @@ nav
   &:hover
     color: rgba(255,255,255,.8)
 
-.dropdown-menu
-  left: -10px
-  top: 150%
-  min-width: max-content
-  background-color: #f1f1f1
-  border-color: #e3e3e3
-
-.dropdown-item
-  text-align: center
-  padding: .25rem .9rem
-  font-size: 90%
-  letter-spacing: 1px
-
-  &:hover
-    background-color: unset
-
-.dropdown-toggle::after
-  display: none
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Dropdown (Language)
@@ -304,8 +296,27 @@ nav
 .dropdown:hover .dropdown-content
   display: block
 
-.img-hov:hover
-  opacity: 0.5
+.dropdown-toggle
+  padding-right: 0
+
+.dropdown-menu
+  right: -10px
+  top: 140%
+  min-width: max-content
+  background-color: #f1f1f1
+  border-color: #e3e3e3
+
+.dropdown-item
+  text-align: center
+  padding: .25rem .9rem
+  font-size: 90%
+  letter-spacing: 1px
+
+  &:hover
+    background-color: unset
+
+.dropdown-toggle::after
+  display: none
 
 .flag
   width: 12px
@@ -320,6 +331,7 @@ nav
 
 .lang-img
   width: 15px
+
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Buttons
@@ -344,97 +356,29 @@ button
 .navbar-dark .navbar-toggler
   border: none !important
 
-.info-button
-  background: none
-  border: none
-  outline: none
-  position: absolute
-  margin: -3px 6px 0
-  padding: 0
-  opacity: 0.5
 
-  img
-    width: 15px
-
-  &:hover
-    opacity: 1
-
-.red-tooltip + .tooltip .tooltip-inner
-  background-color: #161616
-  font-size: 19px
-  line-height: 17px
-
-/*====================================================================
- * Carousel & Gallery
- *====================================================================
-
-.carousel-control
-  opacity: 1
-
-  &:hover, &:focus
-    opacity: 1
-
-  &.right, &.left
-  background-image: unset !important
-
-  img
-    background-color: black
-    padding: 6px
-    margin-top: 175%
-    height: 3rem
-
-#myCarousel
-  max-width: 1200px
-  margin-left: auto
-  margin-right: auto
-  display: block
-  padding: 6px
-  border: solid 3px #2e2132
-  box-shadow: 0 0 0 3px #1c0005, inset 0 0 0 3px #201623, inset 0 0 0 6px #1c0005
-
-.carousel-inner
-  background-color: black
-
-.carousel-indicators
-  bottom: 10px
-
-  li
-    border-radius: 0
-    margin: 0 4px
-
-.carousel-title
-  padding: 6px
-  border: solid 3px #2e2132
-  box-shadow: 0 0 0 3px #1c0005, inset 0 0 0 3px #201623, inset 0 0 0 6px #1c0005
-  background-color: black
-  text-align: center
-  width: max-content
-  position: absolute
-  top: -25px
-  z-index: 2
-  margin-left: auto
-  margin-right: auto
-  left: 0
-  right: 0
-
-
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Image Gallery
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .image-gallery
   -webkit-column-count: 3
   -moz-column-count: 3
   column-count: 3
 
-//@media (max-width: 500px)
-//  .image-gallery
-//    -webkit-column-count: 2
-//    -moz-column-count: 2
-//    column-count: 2
+@media (max-width: 500px)
+  .image-gallery
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1
+
+    img
+      margin-bottom: 20px
 
 
-
-
-
-
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Team
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #team
   margin-top: 100px
@@ -463,22 +407,16 @@ button
     margin-bottom: 70px
 
 
-//video
-//  height: 100vh
-//  position: fixed
-//  bottom: 0
-//  right: 0
-//  width: auto
-//  min-height: 100vh
-//  min-width: 100%
-//  z-index: -900
-//  top: 63px
-//
-//  h1
-//    padding: 20px
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Video
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #video-bg
   background-color: #e5d778
+
+.welcome
+  height: 100vh
+  background-color: black
 
 .supermodule
   position: relative
@@ -492,12 +430,37 @@ button
     text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px
     color: white
 
-.welcome
+#banner
+  position: relative
   height: 100vh
-  background-color: black
+  width: 100%
+  overflow: hidden
+
+#videobcg
+  position: absolute
+  top: 0
+  left: 0
+  min-width: 100%
+  min-height: 100%
+  height: auto
+  width: auto
+  z-index: -100
 
 
 
+#mute-video
+  position: absolute
+  bottom: 10px
+  right: 10px
+  background-color: transparent
+
+  img
+    height: 20px
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Mouse Parallax
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .cloud-container
   height: 70vh
@@ -535,9 +498,9 @@ button
   right: 0
 
 
-
-
-
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Audio
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #audioplayer
   width: 100%
@@ -618,10 +581,15 @@ button
   background-color: #e5d778
   padding-bottom: 100px
 
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Wave Animation
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .wave-container
   position: relative
 
-.gras
+.wave
   background: url("../img/podcast/bg-wave.png") repeat-x
   position: absolute
   background-size: 50% auto
@@ -631,19 +599,23 @@ button
   left: 0
   z-index: -1
 
-.gras-animation
-  animation: 60s scroll-gras infinite linear
+.wave-animation
+  animation: 60s scroll-wave infinite linear
 
-@keyframes scroll-gras
+@keyframes scroll-wave
   to
     background-position: -5692px 0
 
 
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Other
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .element-box
   background-color: white
   border-radius: 10px
-  padding: 60px 10px
+  padding: 60px 10px 30px
+  min-height: 350px
   -webkit-box-shadow: 0 2px 10px -3px rgba(0,0,0,0.5)
   -moz-box-shadow: 0 2px 10px -3px rgba(0,0,0,0.5)
   box-shadow: 0 2px 10px -3px rgba(0,0,0,0.5)
@@ -655,56 +627,33 @@ button
     margin-right: auto
     display: block
 
-.list-horz li
-  float: left
-  padding-right: 20px
 
-
-
-#banner
-  position: relative
-  height: 100vh
-  width: 100%
-  overflow: hidden
-
-#videobcg
-  position: absolute
-  top: 0
-  left: 0
-  min-width: 100%
-  min-height: 100%
-  height: auto
-  width: auto
-  z-index: -100
-
-
-
-#mute-video
-  position: absolute
-  bottom: 10px
-  right: 10px
-  background-color: transparent
-
-  img
-    height: 20px
-
-
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Contact
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 form
   background-color: #eeedef
   border: solid 1px #d0d0d0
   padding: 20px
 
-  button
+  input.btn-submit
     width: 100%
     padding: 5px 0
+    background-color: black
+    border-radius: 100px
+    color: white
+    border: none
 
-  div input
-    border-radius: 0
+  input, textarea
     outline: black
-
-  div textarea
     width: 100%
-    padding: .375rem .75rem
+    margin: 10px 0
     border: 1px solid #ced4da
+    padding: 7px 7px 5px
     border-radius: .25rem
+
+#contact-confirmation
+  background-color: #eeedef
+  border: solid 1px #d0d0d0
+  padding: 20px 20px 0

@@ -3,8 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
+                    <!-- CreaSpace Brand-->
                     <h3 class="brand c-black">creaspace</h3>
 
+                    <!-- Footer List-->
                     <ul class="list-unstyled list-horz footer-list">
                         <li>
                             <a href="./contact.php">
@@ -18,8 +20,9 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Social Media -->
                 <div class="col-md-6">
-                    <!-- Social Media -->
                     <div class="social footer-social c-black">
                         <a href="https://instagram.com/" target="_blank"><img src="./img/icons/instagram-brands.svg"></a>&nbsp;
                         <a href="https://twitter.com/" target="_blank"><img src="./img/icons/twitter-brands.svg"></a>&nbsp;

@@ -1,6 +1,10 @@
 <?php include ("data/head.php"); ?>
 
 <div id="wrap">
+
+    <!--=============================================
+    Navigation
+    =============================================!-->
     <?php include ("data/navbar.php"); ?>
 
     <!--=============================================
@@ -8,6 +12,8 @@
     =============================================!-->
     <div class="container">
         <div class="row cloud-container">
+
+            <!-- Mouse Parallax Event -->
             <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block" data-animation="slideInRight">
                 <div class="cloud-row">
                     <img src="./img/space-photography.jpg" alt="Clouds" class="cloud cloud-A">
@@ -15,9 +21,13 @@
                     <img src="./img/space-artist.jpg" alt="Clouds" class="cloud cloud-C">
                 </div>
             </div>
+
+            <!-- Smartphone Alternative Version -->
             <div class="col-lg-8 d-md-block d-lg-none">
                 <img class="img-fluid" src="./img/space-artist.jpg">
             </div>
+
+            <!-- Introduction Text -->
             <div class="col-lg-4" data-animation="slideInLeft">
                 <h3 class="m-t-5">
                     <?php echo $lang['dl-title'] ?>
@@ -33,9 +43,12 @@
     </div>
 
     <div class="container-fluid" id="video-bg">
+        <!-- Wave Animation -->
         <div class="row wave-container">
-            <div class="gras gras-animation"></div>
+            <div class="wave wave-animation"></div>
         </div>
+
+        <!-- Banner Video -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" data-animation="flipInY" data-animation-delay="300ms">
@@ -49,17 +62,10 @@
         </div>
     </div>
 
-
     <!--=============================================
-    Content
-    =============================================!-->
-
-    <!--=============================================
-    FOOTER
+    Footer
     =============================================!-->
     <?php include ("data/footer.php"); ?>
 </div>
 
 <?php include ("data/head_scripts.php"); ?>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js'></script>

@@ -1,4 +1,9 @@
-<?php // Language Configuration
+<?php
+
+/* Language Configuration
+ * Code for multiple language function
+ */
+
 session_start();
 
 if (!isset($_SESSION['lang']))
