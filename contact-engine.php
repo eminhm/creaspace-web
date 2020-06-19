@@ -1,12 +1,8 @@
 <?php
 
-/* Contact Form Engine
- * Code for the contact form function.
- */
-
 $recipient = 'emin.h@hotmail.com';
 $subject = 'Creaspace Support';
-$sender = 'noreply@creaspace.cc';
+$sender = 'noreply@creaspace.ch';
 
 $name = Trim(stripslashes($_POST['Name']));
 $email = Trim(stripslashes($_POST['Email']));

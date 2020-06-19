@@ -36,11 +36,11 @@
         "privacy" => "Privacy",
 
         // Elements
-        "hobby" => "Dein Hobby",
+        "hobby" => "Your hobby",
         "hobby-text" => "Creaspace offers a variety of possibilities for many hobbies.",
-        "near" => "In der Nähe",
+        "near" => "Nearby",
         "near-text" => "Our places are spread all over Switzerland and possibly near you.",
-        "all" => "Für Alle",
+        "all" => "For all",
         "all-text" => "No matter how old you are or where you come from. At Creaspace, there's space for you.",
 
     );
