@@ -135,7 +135,7 @@
                 <div class="col-lg-12 podcast-row" data-animation="fadeIn">
 
                     <!-- Portrait -->
-                    <img class="img-fluid podcast-portrait" src="img/podcast/gallery/HER_01_Q.JPG">
+                    <img class="img-fluid podcast-portrait" src="img/podcast/gallery/HER_01_Q.jpg">
 
                     <!-- Audio -->
                     <audio id="music" preload="true">
@@ -163,9 +163,9 @@
 
                         <!-- First Row -->
                         <ul id="lightgallery" class="list-unstyled image-gallery" data-animation="fadeIn">
-                            <li data-src="img/podcast/gallery/HER_01.JPG">
+                            <li data-src="img/podcast/gallery/HER_01.jpg">
                                 <a href="">
-                                    <img class="img-fluid" src="img/podcast/gallery/HER_01_Q.JPG">
+                                    <img class="img-fluid" src="img/podcast/gallery/HER_01_Q.jpg">
                                 </a>
                             </li>
                             <li data-src="img/podcast/gallery/HER_02.jpg">
@@ -182,13 +182,13 @@
 
                         <!-- Second Row -->
                         <ul id="lightgallery-1" class="list-unstyled image-gallery" data-animation="fadeIn">
-                            <li data-src="img/podcast/gallery/WORK_1.1.JPG">
+                            <li data-src="img/podcast/gallery/WORK_1.1.jpg">
                                 <a href="">
-                                    <img class="img-fluid" src="img/podcast/gallery/WORK_1.1_Q.JPG">
+                                    <img class="img-fluid" src="img/podcast/gallery/WORK_1.1_Q.jpg">
                                 </a>
                             </li>
-                            <li data-src="img/podcast/gallery/WORK_1.2.JPG"></li>
-                            <li data-src="img/podcast/gallery/WORK_1.3.JPG"></li>
+                            <li data-src="img/podcast/gallery/WORK_1.2.jpg"></li>
+                            <li data-src="img/podcast/gallery/WORK_1.3.jpg"></li>
 
                             <li data-src="img/podcast/gallery/WORK_2.1.jpg">
                                 <a href="">
@@ -198,9 +198,9 @@
                             <li data-src="img/podcast/gallery/WORK_2.2.jpg"></li>
                             <li data-src="img/podcast/gallery/WORK_2.3.jpg"></li>
 
-                            <li data-src="img/podcast/gallery/WORK_3.1.JPG">
+                            <li data-src="img/podcast/gallery/WORK_3.1.jpg">
                                 <a href="">
-                                    <img class="img-fluid" src="img/podcast/gallery/WORK_3.1_Q.JPG">
+                                    <img class="img-fluid" src="img/podcast/gallery/WORK_3.1_Q.jpg">
                                 </a>
                             </li>
                             <li data-src="img/podcast/gallery/WORK_3.2.png"></li>
